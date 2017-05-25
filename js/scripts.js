@@ -24,7 +24,8 @@ function Column(name) {
     	self.removeColumn();
   	});
   	$columnAddCard.click(function(event) {
-    	self.addCard(new Card('prompt("Wpisz nazwę karty'));
+     var  newCa = prompt('Wpisz nazwę karty')
+    	self.addCard(new Card(newCa));
     });
 
  	 $column.append($columnTitle)
