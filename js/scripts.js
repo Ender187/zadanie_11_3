@@ -18,7 +18,7 @@ function Column(name) {
   		var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
   		var $columnCardList = $('<ul>').addClass('column-card-list');
   		var $columnDelete = $('<button>').addClass('btn-delete').text('x');
-  		var $columnAddCard = $('<button>').addClass('add-card').text('Dodaj kartę');
+  		var $columnAddCard = $('<button>').addClass('btn-primary btn-xs').text('Dodaj kartę');
 
   	$columnDelete.click(function() {
     	self.removeColumn();
@@ -33,6 +33,7 @@ function Column(name) {
     	.append($columnCardList);
 
   	return $column;
+}
 }
 Column.prototype = {
     addCard: function(card) {
